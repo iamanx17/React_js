@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Card from './Card';
+
 
 ReactDOM.render(
   <>
-  <App />
+  <Card/>
   </>,
-  document.getElementById('pro')
+  document.getElementById('blogpost')
+
+
 );

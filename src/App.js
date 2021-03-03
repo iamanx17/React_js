@@ -1,27 +1,27 @@
 import React from 'react';
-import Project from './Project';
-import Pdata from './Pdata';
+import Images from './Images'
 
-const Pro=(i)=>{
+
+const App=(props)=>{
   return(
-    <project
-    imgsrc={i.imgurl}
-    title={i.title}
-    desc={i.desc}
-    />
+    <>
+    <div className="col">
+    <div className="card">
+      <Images imgsrc={props.imgsrc}/>
+      <div className="card-body">
+        <h5 className="card-title">{props.title}</h5>
+        <p className="card-text">
+          {props.desc}
+        </p>
+        <a href='#' className='btn btn-dark'>Live preview</a>
+      </div>
+    </div>
+  </div>
+  </>
+
+
 
   );
 }
 
-
-
-
-const Data=()=>{
-  return(
-    Pdata.map(Project)
-  );
-}
-
-  
-export default Data;
-
+export default App;
